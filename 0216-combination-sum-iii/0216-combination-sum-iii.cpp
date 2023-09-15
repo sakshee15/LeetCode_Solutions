@@ -2,7 +2,7 @@ class Solution {
 public:
 
     void fun(int start,int k,int n, vector<int>&temp,vector<vector<int>>&ans){
-         
+          if(n<0||k<0) return;
           if(n==0 && k==0){
               ans.push_back(temp);
               return;
