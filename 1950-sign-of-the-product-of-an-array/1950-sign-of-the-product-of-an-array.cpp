@@ -1,14 +1,13 @@
 class Solution {
 public:
     int arraySign(vector<int>& nums) {
-         int n=0,p=0,z=0;
-        for(int i=0;i<nums.size();i++){
-           if(nums[i]==0) z++;
-           else if(nums[i]>0) p++;
-           else n++;
+        int negativeCount = 0;
+        
+        for (int num : nums) {
+            if (num == 0) return 0;          
+            else if (num < 0) negativeCount++; 
         }
-        if(z) return 0;
-        if(n%2!=0) return -1;
-        else return 1;
+        
+        return (negativeCount % 2 == 0) ? 1 : -1; 
     }
 };
