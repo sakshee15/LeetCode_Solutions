@@ -1,15 +1,18 @@
 class Solution {
 public:
     vector<int> numberOfPairs(vector<int>& nums) {
-        unordered_map<int,int>map;
-        int pair=0,left=0;
-        for(int i=0;i<nums.size();i++){
-           map[nums[i]]++;
+        unordered_map<int, int> freqMap;
+        int pairs = 0, singles = 0;
+        
+        for (int num : nums) {
+            freqMap[num]++;
         }
-        for(auto &i:map){
-            pair+=i.second/2;
-            left+=i.second%2;
+        
+        for (const auto& [num, freq] : freqMap) {
+            pairs += freq / 2;
+            singles += freq % 2;
         }
-        return {pair,left};
+        
+        return {pairs, singles};
     }
 };
