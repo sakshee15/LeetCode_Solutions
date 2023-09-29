@@ -1,8 +1,8 @@
 class Solution {
 public:
     bool isMonotonic(vector<int>& nums) {
-        int count=0,count1=0,n=nums.size();
-        for(int i=1;i<n;i++){
+        int count=0,count1=0;
+        for(int i=1;i<nums.size();i++){
             if(nums[i-1]<=nums[i]){
                 count++;
             }
@@ -10,6 +10,6 @@ public:
                 count1++;
             }
         }
-        return count == n-1||count1==n-1;
+        return count == nums.size()-1||count1==nums.size()-1;
     }
 };
