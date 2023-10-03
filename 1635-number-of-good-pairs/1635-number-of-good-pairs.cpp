@@ -1,16 +1,16 @@
 class Solution {
 public:
-    int numIdenticalPairs(vector<int>& nums) {
-       int count=0;
-       for(int i=0;i<nums.size();i++){
-           for(int j=i+1;j<nums.size();j++){
-                  
-                  if(nums[i]==nums[j]){
-                      count++;
-                  }
-                  
-            }
-       } 
-       return count;
+    int numIdenticalPairs(std::vector<int>& nums) {
+        int count = 0;
+        std::unordered_map<int, int> map;
+        for (int i = 0; i < nums.size(); i++) {
+            map[nums[i]]++;
+        }
+        for (const auto& pair : map) {
+            int n = pair.second;
+            count += (n * (n - 1)) / 2;
+        }
+
+        return count;
     }
 };
