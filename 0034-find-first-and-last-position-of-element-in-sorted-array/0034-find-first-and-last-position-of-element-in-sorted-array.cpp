@@ -2,7 +2,6 @@ class Solution {
 public:
     vector<int> searchRange(vector<int>& nums, int target) {
         // sort(nums.begin(), nums.end());
-
         vector<int> ans = {-1, -1};
         int i = 0, j = nums.size() - 1;
 
