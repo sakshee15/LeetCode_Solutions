@@ -1,6 +1,6 @@
 # LeetCode_Solutions 💻
 
-Welcome to my LeetCode solutions repository! This repository contains my solutions to various LeetCode problems. I use the LeetHub extension to automatically sync and manage my submissions.
+Welcome to my LeetCode solutions repository! This repository contains my solutions to various LeetCode problems.
 
 Each problem folder contains the code solutions and LeetCode problem descriptions.
 
