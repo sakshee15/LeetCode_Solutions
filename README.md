@@ -7,3 +7,17 @@ Each problem folder contains the code solutions and LeetCode problem description
 Feel free to explore the solutions, ask questions, or provide feedback.
 
 Happy coding! 🚀🔥
+
+
+# Two Pointers
+|  |
+| ------- |
+| [2572-append-characters-to-string-to-make-subsequence](https://github.com/sakshee15/LeetCode_Solutions/tree/master/2572-append-characters-to-string-to-make-subsequence) |
+# String
+|  |
+| ------- |
+| [2572-append-characters-to-string-to-make-subsequence](https://github.com/sakshee15/LeetCode_Solutions/tree/master/2572-append-characters-to-string-to-make-subsequence) |
+# Greedy
+|  |
+| ------- |
+| [2572-append-characters-to-string-to-make-subsequence](https://github.com/sakshee15/LeetCode_Solutions/tree/master/2572-append-characters-to-string-to-make-subsequence) |
