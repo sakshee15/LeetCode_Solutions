@@ -1,20 +1,27 @@
-class Solution {
+class Solution
+{
 public:
-    int minPatches(vector<int>& nums, int n) {
-        long long miss = 1;
-        int result = 0;
-        size_t i = 0;
+    int minPatches(vector<int> &nums, int n)
+    {
+        ios_base::sync_with_stdio(0);
+        long long int currentSum = 1; // Tracks the smallest number that cannot be formed
+        int patches = 0, index = 0;   // Pathches to keep track of the patch and Index to iterate through the nums array
 
-        while (miss <= n) {
-            if (i < nums.size() && nums[i] <= miss) {
-                miss += nums[i];
-                i++;
-            } else {
-                miss += miss;
-                result++;
+        while (currentSum <= n)
+        {
+            // If the current number in nums is within the range and can be added to currentSum
+            if (index < nums.size() && nums[index] <= currentSum)
+            {
+                currentSum += nums[index];; // Include nums[index] in the range
+                index++;
+            }
+            else
+            {
+                // Add a patch (currentSum itself) to cover the range up to currentSum * 2 - 1
+                currentSum += currentSum;
+                patches++;
             }
         }
-
-        return result;
+        return patches;
     }
 };
