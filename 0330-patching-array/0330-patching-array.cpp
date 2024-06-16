@@ -3,7 +3,6 @@ class Solution
 public:
     int minPatches(vector<int> &nums, int n)
     {
-        ios_base::sync_with_stdio(0);
         long long int currentSum = 1; // Tracks the smallest number that cannot be formed
         int patches = 0, index = 0;   // Pathches to keep track of the patch and Index to iterate through the nums array
 
